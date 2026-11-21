@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Tokens de docs/DESIGN.md ("Artisan Hearth & Grill"); solo los que usa la carta. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: #fff9ee;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fbf3e1;
+  --color-surface-container: #f5eddb;
+  --color-surface-container-high: #efe8d6;
+  --color-on-surface: #1e1b11;
+  --color-on-surface-variant: #414943;
+  --color-outline-variant: #c1c8c1;
+  --color-primary: #022d1a;
+  --color-primary-container: #1c432f;
+  --color-secondary: #914c1a;
+  --color-tertiary-fixed: #ffddae;
+
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

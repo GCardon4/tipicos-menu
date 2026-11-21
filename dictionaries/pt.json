@@ -1,0 +1,18 @@
+{
+  "brand": "Típicos",
+  "tagline": "Sabores da culinária colombiana",
+  "metaDescription": "Cardápio de comida típica colombiana: entradas, cafés da manhã, pratos típicos, sopas e grelhados.",
+  "categoriesLabel": "Categorias do cardápio",
+  "languageLabel": "Idioma",
+  "table": "Mesa {number}",
+  "service": {
+    "title": "Precisa de algo?",
+    "waiter": "Chamar o garçom",
+    "bill": "Pedir a conta",
+    "water": "Água",
+    "napkins": "Guardanapos",
+    "sent": "Enviado",
+    "sentMessage": "Pronto! Já avisamos a equipe.",
+    "errorMessage": "Não foi possível enviar o pedido. Tente novamente ou chame o garçom."
+  }
+}

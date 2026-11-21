@@ -1,0 +1,18 @@
+{
+  "brand": "Típicos",
+  "tagline": "Flavors of Colombian cuisine",
+  "metaDescription": "Traditional Colombian food menu: starters, breakfasts, typical dishes, hearty soups and grill.",
+  "categoriesLabel": "Menu categories",
+  "languageLabel": "Language",
+  "table": "Table {number}",
+  "service": {
+    "title": "Need anything?",
+    "waiter": "Call waiter",
+    "bill": "Ask for the bill",
+    "water": "Water",
+    "napkins": "Napkins",
+    "sent": "Sent",
+    "sentMessage": "Done! We've let the staff know.",
+    "errorMessage": "We couldn't send your request. Please try again or wave to a waiter."
+  }
+}

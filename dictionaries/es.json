@@ -1,0 +1,18 @@
+{
+  "brand": "Típicos",
+  "tagline": "Sabores de la cocina colombiana",
+  "metaDescription": "Carta de comida típica colombiana: entradas, desayunos, típicos, sancochos y parrilla.",
+  "categoriesLabel": "Categorías de la carta",
+  "languageLabel": "Idioma",
+  "table": "Mesa {number}",
+  "service": {
+    "title": "¿Necesitas algo?",
+    "waiter": "Llamar al mesero",
+    "bill": "Pedir la cuenta",
+    "water": "Agua",
+    "napkins": "Servilletas",
+    "sent": "Enviado",
+    "sentMessage": "¡Listo! Ya avisamos al personal.",
+    "errorMessage": "No pudimos enviar la solicitud. Inténtalo de nuevo o llama al mesero."
+  }
+}
