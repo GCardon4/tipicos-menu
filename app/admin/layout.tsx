@@ -5,6 +5,7 @@ import "../globals.css";
 export const metadata: Metadata = {
   title: "Panel · Típicos",
   robots: { index: false, follow: false },
+  icons: { icon: { url: "/logotipo.svg", type: "image/svg+xml" } },
 };
 
 // Layout raíz propio del panel (español, sin i18n). No lee datos de la petición.

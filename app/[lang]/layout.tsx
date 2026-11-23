@@ -8,11 +8,28 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+// Necesario para que las URLs absolutas de og:image funcionen al compartir.
+const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000");
+
+const ogLocale = { es: "es_CO", en: "en_US", pt: "pt_BR" } as const;
+
 export async function generateMetadata(): Promise<Metadata> {
-  const dict = await getDictionary(await getLocale());
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+  const title = `${dict.brand} · ${dict.tagline}`;
   return {
-    title: `${dict.brand} · ${dict.tagline}`,
+    metadataBase,
+    title,
     description: dict.metaDescription,
+    openGraph: {
+      type: "website",
+      siteName: dict.brand,
+      title,
+      description: dict.metaDescription,
+      locale: ogLocale[locale],
+    },
+    twitter: { card: "summary_large_image", title, description: dict.metaDescription },
+    icons: { icon: { url: "/logotipo.svg", type: "image/svg+xml" } },
   };
 }
 
