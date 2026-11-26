@@ -1,6 +1,11 @@
 {
-  "brand": "Típicos",
+  "brand": "La Casa de los Típicos",
   "tagline": "Flavors of Colombian cuisine",
+  "hero": {
+    "eyebrow": "Welcome",
+    "intro": "Home-style Colombian cooking: bandeja paisa, hearty sancochos, country breakfasts and grilled meats. Pick a category and dig in.",
+    "imageAlt": "Bandeja paisa with sausage, pork rind, egg, patacón, beans and avocado, with the La Casa de los Típicos logo"
+  },
   "metaDescription": "Traditional Colombian food menu: starters, breakfasts, typical dishes, hearty soups and grill.",
   "categoriesLabel": "Menu categories",
   "languageLabel": "Language",

@@ -1,6 +1,11 @@
 {
-  "brand": "Típicos",
+  "brand": "La Casa de los Típicos",
   "tagline": "Sabores de la cocina colombiana",
+  "hero": {
+    "eyebrow": "Bienvenidos",
+    "intro": "Cocina colombiana hecha en casa: bandeja paisa, sancochos, desayunos de pueblo y carnes a la parrilla. Elige una categoría y antójate.",
+    "imageAlt": "Bandeja paisa con chorizo, chicharrón, huevo, patacón, frijoles y aguacate, con el logo de La Casa de los Típicos"
+  },
   "metaDescription": "Carta de comida típica colombiana: entradas, desayunos, típicos, sancochos y parrilla.",
   "categoriesLabel": "Categorías de la carta",
   "languageLabel": "Idioma",

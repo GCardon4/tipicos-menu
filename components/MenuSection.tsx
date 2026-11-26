@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { formatPrice } from "@/lib/format";
 import type { Locale } from "@/lib/i18n/config";
 import type { MenuCategory } from "@/data/menu";
@@ -16,8 +17,21 @@ export function MenuSection({
     <section
       id={category.id}
       aria-labelledby={headingId}
-      className="mb-6 scroll-mt-32 break-inside-avoid rounded-lg bg-surface-container-lowest p-5 shadow-[0_2px_16px_rgba(28,67,47,0.06)]"
+      className="mb-6 scroll-mt-32 break-inside-avoid overflow-hidden rounded-lg bg-surface-container-lowest p-5 shadow-[0_2px_16px_rgba(28,67,47,0.06)]"
     >
+      {category.image && (
+        <div className="relative -mx-5 -mt-5 mb-4 aspect-[16/10]">
+          <Image
+            src={category.image.src}
+            alt={category.image.alt[locale]}
+            fill
+            placeholder="blur"
+            // Móvil: ancho completo; tablet: 2 columnas; escritorio: 3 (máx. 1200px).
+            sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
+      )}
       <h2
         id={headingId}
         className="font-serif text-[1.625rem] leading-[2.125rem] font-semibold text-primary md:text-[2rem] md:leading-10"

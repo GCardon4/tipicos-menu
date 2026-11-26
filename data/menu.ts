@@ -1,4 +1,7 @@
+import type { StaticImageData } from "next/image";
 import type { Locale } from "@/lib/i18n/config";
+import babyBeefImg from "@/public/images/baby-beef.png";
+import bandejaPaisaImg from "@/public/images/bandeja-paisa.png";
 
 export type Localized = Record<Locale, string>;
 
@@ -16,6 +19,8 @@ export interface MenuCategory {
   name: Localized;
   /** Nota común a toda la categoría (ej. acompañamientos). */
   note?: Localized;
+  /** Foto de portada de la sección (solo si muestra un plato real de la carta). */
+  image?: { src: StaticImageData; alt: Localized };
   items: MenuItem[];
 }
 
@@ -105,6 +110,14 @@ export const menu: MenuCategory[] = [
   {
     id: "tipicos",
     name: L("Típicos", "Traditional Dishes", "Pratos Típicos"),
+    image: {
+      src: bandejaPaisaImg,
+      alt: L(
+        "Bandeja paisa servida sobre mesa de madera",
+        "Bandeja paisa served on a wooden table",
+        "Bandeja paisa servida em mesa de madeira",
+      ),
+    },
     items: [
       {
         id: "bandeja-paisa",
@@ -177,6 +190,14 @@ export const menu: MenuCategory[] = [
   {
     id: "parrilla",
     name: L("Parrilla", "Grill", "Grelhados"),
+    image: {
+      src: babyBeefImg,
+      alt: L(
+        "Corte de res a las brasas sobre la parrilla",
+        "Beef cut over hot coals on the grill",
+        "Corte bovino na brasa sobre a grelha",
+      ),
+    },
     note: L(
       "Acompañados de Papas a la Francesa, Chimichurri, Aguacate y Arepa con Mozzarella",
       "Served with French Fries, Chimichurri, Avocado and Arepa with Mozzarella",
