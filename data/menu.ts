@@ -24,19 +24,19 @@ export interface MenuCategory {
   items: MenuItem[];
 }
 
-const L = (es: string, en: string, pt: string): Localized => ({ es, en, pt });
+const L = (es: string, en: string, fr: string): Localized => ({ es, en, fr });
 /** Mismo texto en los tres idiomas (nombres propios). */
 const same = (text: string): Localized => L(text, text, text);
 
 export const menu: MenuCategory[] = [
   {
     id: "entradas",
-    name: L("Entradas", "Starters", "Entradas"),
+    name: L("Entradas", "Starters", "Entrées"),
     items: [
       {
         id: "ceviche-chicharron",
         price: 25000,
-        name: L("Ceviche de Chicharrón", "Pork Rind Ceviche", "Ceviche de Torresmo"),
+        name: L("Ceviche de Chicharrón", "Pork Rind Ceviche", "Ceviche de Couenne Croustillante"),
       },
       {
         id: "chorizo-arepa-hogao",
@@ -44,13 +44,13 @@ export const menu: MenuCategory[] = [
         name: L(
           "Chorizo con Arepa y Hogao",
           "Sausage with Arepa and Hogao",
-          "Linguiça com Arepa e Hogao",
+          "Saucisse avec Arepa et Hogao",
         ),
       },
       {
         id: "ceviche-camaron",
         price: 27000,
-        name: L("Ceviche de Camarón", "Shrimp Ceviche", "Ceviche de Camarão"),
+        name: L("Ceviche de Camarón", "Shrimp Ceviche", "Ceviche de Crevettes"),
       },
       {
         id: "patacon-guacamole",
@@ -58,7 +58,7 @@ export const menu: MenuCategory[] = [
         name: L(
           "Patacón con Guacamole",
           "Patacón (Fried Plantain) with Guacamole",
-          "Patacón (Banana-da-terra Frita) com Guacamole",
+          "Patacón (Banane Plantain Frite) au Guacamole",
         ),
       },
       {
@@ -67,14 +67,14 @@ export const menu: MenuCategory[] = [
         name: L(
           "Morcilla con Arepa y Hogao",
           "Blood Sausage with Arepa and Hogao",
-          "Morcela com Arepa e Hogao",
+          "Boudin Noir avec Arepa et Hogao",
         ),
       },
     ],
   },
   {
     id: "desayunos",
-    name: L("Desayunos", "Breakfast", "Café da Manhã"),
+    name: L("Desayunos", "Breakfast", "Petits-déjeuners"),
     items: [
       {
         id: "calentao",
@@ -83,17 +83,17 @@ export const menu: MenuCategory[] = [
         details: L(
           "Res, Cerdo, Chorizo o Chicharrón (mismo precio)",
           "Beef, Pork, Sausage or Pork Rind (same price)",
-          "Carne Bovina, Porco, Linguiça ou Torresmo (mesmo preço)",
+          "Bœuf, Porc, Saucisse ou Couenne Croustillante (même prix)",
         ),
       },
       {
         id: "desayuno-americano",
         price: 15000,
-        name: L("Desayuno Americano", "American Breakfast", "Café da Manhã Americano"),
+        name: L("Desayuno Americano", "American Breakfast", "Petit-déjeuner Américain"),
         details: L(
           "Huevos al gusto, Salchicha, Jugo de Naranja, Arepa, Quesito",
           "Eggs any style, Sausage, Orange Juice, Arepa, Quesito (fresh cheese)",
-          "Ovos ao gosto, Salsicha, Suco de Laranja, Arepa, Quesito (queijo fresco)",
+          "Œufs au choix, Saucisse, Jus d'Orange, Arepa, Quesito (fromage frais)",
         ),
       },
       {
@@ -102,20 +102,20 @@ export const menu: MenuCategory[] = [
         name: L(
           "Arepa, Quesito, Chocolate",
           "Arepa, Cheese and Hot Chocolate",
-          "Arepa, Queijo e Chocolate Quente",
+          "Arepa, Fromage Frais et Chocolat Chaud",
         ),
       },
     ],
   },
   {
     id: "tipicos",
-    name: L("Típicos", "Traditional Dishes", "Pratos Típicos"),
+    name: L("Típicos", "Traditional Dishes", "Plats Typiques"),
     image: {
       src: bandejaPaisaImg,
       alt: L(
         "Bandeja paisa servida sobre mesa de madera",
         "Bandeja paisa served on a wooden table",
-        "Bandeja paisa servida em mesa de madeira",
+        "Bandeja paisa servie sur une table en bois",
       ),
     },
     items: [
@@ -126,13 +126,13 @@ export const menu: MenuCategory[] = [
         details: L(
           "Frijoles, Arroz, Ensalada, Huevo, Arepa, Chorizo, Tajada de Maduro, Chicharrón, Carne Molida, Aguacate",
           "Beans, Rice, Salad, Egg, Arepa, Sausage, Sweet Plantain Slice, Pork Rind, Ground Beef, Avocado",
-          "Feijão, Arroz, Salada, Ovo, Arepa, Linguiça, Fatia de Banana-da-terra Madura, Torresmo, Carne Moída, Abacate",
+          "Haricots, Riz, Salade, Œuf, Arepa, Saucisse, Tranche de Banane Plantain Mûre, Couenne Croustillante, Bœuf Haché, Avocat",
         ),
       },
       {
         id: "cazuela-frijoles",
         price: 38000,
-        name: L("Cazuela de Frijoles", "Bean Casserole", "Cazuela de Feijão"),
+        name: L("Cazuela de Frijoles", "Bean Casserole", "Cassolette de Haricots"),
       },
     ],
   },
@@ -147,34 +147,34 @@ export const menu: MenuCategory[] = [
         details: L(
           "Res, Cerdo, Pollo, Chicharrón, Chorizo, Papas Fritas",
           "Beef, Pork, Chicken, Pork Rind, Sausage, French Fries",
-          "Carne Bovina, Porco, Frango, Torresmo, Linguiça, Batata Frita",
+          "Bœuf, Porc, Poulet, Couenne Croustillante, Saucisse, Frites",
         ),
       },
       {
         id: "picada-dos",
         price: 75000,
-        name: L("Picada para Dos", "Sharing Platter for Two", "Picada para Dois"),
+        name: L("Picada para Dos", "Sharing Platter for Two", "Plateau à Partager pour Deux"),
       },
       {
         id: "picada-cuatro",
         price: 135000,
-        name: L("Picada para Cuatro", "Sharing Platter for Four", "Picada para Quatro"),
+        name: L("Picada para Cuatro", "Sharing Platter for Four", "Plateau à Partager pour Quatre"),
       },
     ],
   },
   {
     id: "sancochos",
-    name: L("Sancochos", "Hearty Soups", "Sopas e Sancochos"),
+    name: L("Sancochos", "Hearty Soups", "Soupes et Sancochos"),
     items: [
       {
         id: "mondongo",
         price: 33000,
-        name: L("Mondongo", "Mondongo (Tripe Soup)", "Mondongo (Sopa de Dobradinha)"),
+        name: L("Mondongo", "Mondongo (Tripe Soup)", "Mondongo (Soupe de Tripes)"),
       },
       {
         id: "sancocho-gallina",
         price: 33000,
-        name: L("Sancocho de Gallina", "Hen Sancocho Stew", "Sancocho de Galinha"),
+        name: L("Sancocho de Gallina", "Hen Sancocho Stew", "Sancocho de Poule"),
       },
       {
         id: "ajiaco",
@@ -182,40 +182,120 @@ export const menu: MenuCategory[] = [
         name: L(
           "Ajiaco",
           "Ajiaco (Chicken and Potato Soup)",
-          "Ajiaco (Sopa de Frango e Batata)",
+          "Ajiaco (Soupe de Poulet et Pommes de Terre)",
         ),
       },
     ],
   },
   {
     id: "parrilla",
-    name: L("Parrilla", "Grill", "Grelhados"),
+    name: L("Parrilla", "Grill", "Grillades"),
     image: {
       src: babyBeefImg,
       alt: L(
         "Corte de res a las brasas sobre la parrilla",
         "Beef cut over hot coals on the grill",
-        "Corte bovino na brasa sobre a grelha",
+        "Pièce de bœuf sur la braise du gril",
       ),
     },
     note: L(
       "Acompañados de Papas a la Francesa, Chimichurri, Aguacate y Arepa con Mozzarella",
       "Served with French Fries, Chimichurri, Avocado and Arepa with Mozzarella",
-      "Acompanhados de Batata Frita, Chimichurri, Abacate e Arepa com Mussarela",
+      "Servis avec Frites, Chimichurri, Avocat et Arepa à la Mozzarella",
     ),
     items: [
       { id: "filet-mignon", price: 68000, name: same("Filet Mignon") },
       {
         id: "punta-de-anca",
         price: 58000,
-        name: L("Punta de Anca", "Punta de Anca (Tri-Tip)", "Ponta de Anca (Maminha)"),
+        name: L("Punta de Anca", "Punta de Anca (Tri-Tip)", "Punta de Anca (Aiguillette de Rumsteck)"),
       },
       { id: "churrasco", price: 58000, name: same("Churrasco") },
       { id: "baby-beef", price: 65000, name: same("Baby Beef") },
       {
         id: "costillas-bbq",
         price: 63000,
-        name: L("Costillas BBQ", "BBQ Ribs", "Costelas BBQ"),
+        name: L("Costillas BBQ", "BBQ Ribs", "Travers de Porc BBQ"),
+      },
+    ],
+  },
+  {
+    id: "pescados",
+    name: L("Pescados", "Fish", "Poissons"),
+    items: [
+      {
+        id: "trucha-guatapense",
+        price: 60000,
+        name: L("Trucha Guatapense", "Guatapé-style Trout", "Truite à la Mode de Guatapé"),
+      },
+      {
+        id: "trucha-frita",
+        price: 38000,
+        name: L("Trucha Frita", "Fried Trout", "Truite Frite"),
+      },
+      {
+        id: "trucha-ajillo",
+        price: 38000,
+        name: L("Trucha al Ajillo", "Garlic Trout", "Truite à l'Ail"),
+      },
+      {
+        id: "salmon-guatapense",
+        price: 70000,
+        name: L("Salmón Guatapense", "Guatapé-style Salmon", "Saumon à la Mode de Guatapé"),
+      },
+      {
+        id: "salmon-parrilla",
+        price: 60000,
+        name: L("Salmón a la Parrilla", "Grilled Salmon", "Saumon Grillé"),
+      },
+      {
+        id: "salmon-ajillo",
+        price: 60000,
+        name: L("Salmón al Ajillo", "Garlic Salmon", "Saumon à l'Ail"),
+      },
+    ],
+  },
+  {
+    id: "pollo",
+    name: L("Pollo", "Chicken", "Poulet"),
+    note: L(
+      "Acompañados de Papas a la Francesa, Ensalada y Patacón",
+      "Served with French Fries, Salad and Patacón (Fried Plantain)",
+      "Servis avec Frites, Salade et Patacón (Banane Plantain Frite)",
+    ),
+    items: [
+      {
+        id: "pechuga-champinones",
+        price: 55000,
+        name: L(
+          "Pechuga en Salsa de Champiñones",
+          "Chicken Breast in Mushroom Sauce",
+          "Blanc de Poulet Sauce aux Champignons",
+        ),
+      },
+      {
+        id: "pechuga-gratinada",
+        price: 55000,
+        name: L("Pechuga Gratinada", "Chicken Breast au Gratin", "Blanc de Poulet Gratiné"),
+      },
+      {
+        id: "pechuga-milanesa",
+        price: 38000,
+        name: L("Pechuga a la Milanesa", "Breaded Chicken Breast", "Blanc de Poulet Pané"),
+      },
+      {
+        id: "pechuga-plancha",
+        price: 38000,
+        name: L("Pechuga a la Plancha", "Grilled Chicken Breast", "Blanc de Poulet à la Plancha"),
+      },
+      {
+        id: "pechuga-camarones",
+        price: 58000,
+        name: L(
+          "Pechuga en Camarones",
+          "Chicken Breast with Shrimp",
+          "Blanc de Poulet aux Crevettes",
+        ),
       },
     ],
   },

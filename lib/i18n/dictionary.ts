@@ -4,13 +4,13 @@ import { hasLocale, type Locale } from "./config";
 
 import type es from "@/dictionaries/es.json";
 
-/** es.json es la fuente de verdad: en/pt deben tener exactamente las mismas claves. */
+/** es.json es la fuente de verdad: en/fr deben tener exactamente las mismas claves. */
 export type Dictionary = typeof es;
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   es: () => import("@/dictionaries/es.json").then((m) => m.default),
   en: () => import("@/dictionaries/en.json").then((m) => m.default),
-  pt: () => import("@/dictionaries/pt.json").then((m) => m.default),
+  fr: () => import("@/dictionaries/fr.json").then((m) => m.default),
 };
 
 /** Idioma de la ruta actual (segmento raíz /[lang]). Solo en Server Components. */

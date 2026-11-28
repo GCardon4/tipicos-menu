@@ -31,3 +31,21 @@
 - Baby Beef: $65.000
 - Costillas BBQ: $63.000
 (_Acompañados de Papas a la francesa, Chimichurri, Aguacate y Arepa con Mozarella_)
+
+# Pescados
+- Trucha Guatapense: $60.000
+- Trucha Frita: $38.000
+- Trucha al Ajillo: $38.000
+- Salmón Guatapense: $70.000
+- Salmón a la Parrilla: $60.000
+- Salmón al Ajillo: $60.0000
+
+# Pollo
+- Pechuga en salsa de Champiñones: $55.000
+- Pechuga Gratinada: $55.000
+- Pechuga a la Milanesa: $38.000
+- Pechuga a la Plancha: $38.000
+- Pechuga en Camarones: $58.000
+(_Acompañados de Papas a la francesa, Ensalada y Patacón_)
+
+# Bebidas

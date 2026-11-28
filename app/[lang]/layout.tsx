@@ -11,7 +11,7 @@ export function generateStaticParams() {
 // Necesario para que las URLs absolutas de og:image funcionen al compartir.
 const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000");
 
-const ogLocale = { es: "es_CO", en: "en_US", pt: "pt_BR" } as const;
+const ogLocale = { es: "es_CO", en: "en_US", fr: "fr_FR" } as const;
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

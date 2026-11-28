@@ -1,0 +1,23 @@
+{
+  "brand": "La Casa de los Típicos",
+  "tagline": "Saveurs de la cuisine colombienne",
+  "hero": {
+    "eyebrow": "Bienvenue",
+    "intro": "Cuisine colombienne maison : bandeja paisa, sancochos copieux, petits-déjeuners de campagne et viandes grillées. Choisissez une catégorie et bon appétit.",
+    "imageAlt": "Bandeja paisa avec saucisse, couenne croustillante, œuf, patacón, haricots et avocat, avec le logo de La Casa de los Típicos"
+  },
+  "metaDescription": "Carte de cuisine typique colombienne : entrées, petits-déjeuners, plats typiques, soupes et grillades.",
+  "categoriesLabel": "Catégories de la carte",
+  "languageLabel": "Langue",
+  "table": "Table {number}",
+  "service": {
+    "title": "Besoin de quelque chose ?",
+    "waiter": "Appeler le serveur",
+    "bill": "Demander l'addition",
+    "water": "Eau",
+    "napkins": "Serviettes",
+    "sent": "Envoyé",
+    "sentMessage": "C'est fait ! L'équipe a été prévenue.",
+    "errorMessage": "Impossible d'envoyer la demande. Réessayez ou appelez le serveur."
+  }
+}
